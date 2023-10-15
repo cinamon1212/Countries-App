@@ -60,21 +60,21 @@ export const InfoCard = () => {
 						<StListItem>
 							{' '}
 							<b>Top Level Domain </b>
-							{topLevelDomain.map((d) => (
+							{topLevelDomain?.map((d) => (
 								<span key={d}>{d}</span>
 							))}
 						</StListItem>
 						<StListItem>
 							{' '}
 							<b>Currency </b>
-							{currencies.map((c) => (
+							{currencies?.map((c) => (
 								<span key={c.code}>{c.name} </span>
 							))}
 						</StListItem>
 						<StListItem>
 							{' '}
 							<b>Languages </b>
-							{languages.map((l) => (
+							{languages?.map((l) => (
 								<span key={l.name}>{l.name}</span>
 							))}
 						</StListItem>
@@ -86,7 +86,7 @@ export const InfoCard = () => {
 						<span>There is no border countries</span>
 					) : !loadingNeighbors ? (
 						<StTagGroup>
-							{countryNeighbors.map((n) => (
+							{countryNeighbors?.map((n) => (
 								<StTag key={n} onClick={() => navigate(`/country/${n}`)}>
 									{n}
 								</StTag>
