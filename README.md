@@ -6,8 +6,8 @@ React + TypeScript + CRA + Styled-components
 
 ```bash
 git clone https://github.com/cinamon1212/Countries-App.git
-yarn install
-yarn run dev
+npm install
+npm start
 ```
 
 ## Link to deployed app
